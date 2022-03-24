@@ -2,7 +2,7 @@ var express = require("express");
 var router = express.Router();
 
 router.get("/new", (req,res) => {
-  res.send("studentForm");
+  res.render("studentsForm");
 });
 
 router.post("/", (req,res) => {
@@ -11,7 +11,7 @@ router.post("/", (req,res) => {
 
 
 router.get("/", (req,res) => {
-  res.render('students', { list: ["Vivek", "Chandan", "Murari", "Pankaj"] });
+  res.render('list', { list: ["Vivek", "Chandan", "Murari", "Pankaj"] });
 });
 
 
