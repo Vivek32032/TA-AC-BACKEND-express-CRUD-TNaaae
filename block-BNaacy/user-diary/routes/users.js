@@ -12,8 +12,8 @@ router.get('/new',(req,res)=>{
 router.post('/',(req,res,next)=>{
 
     User.create(req.body, (err,createdUser)=>{
-        if(err) return next(err);
-        res.redirect('/users')
+        if(err) return res.redirect('/users/new')
+        res.redirect('/');
     })
 })
 

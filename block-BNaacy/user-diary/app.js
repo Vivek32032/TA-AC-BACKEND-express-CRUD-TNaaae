@@ -13,7 +13,6 @@ mongoose.connect('mongodb://localhost/userData',
 
 //installing express app
 var app = express();
-app.use(express.json());
 
 app.set('view engine',"ejs");
 app.set("views",path.join(__dirname,"views"));
@@ -21,6 +20,10 @@ app.set("views",path.join(__dirname,"views"));
 //static middleware
 
 app.use(express.static(path.join(__dirname,"public")))
+
+//middleware
+app.use(express.json());
+app.use(express.urlencoded({extended: false}))
 
 //routing middleware
 
