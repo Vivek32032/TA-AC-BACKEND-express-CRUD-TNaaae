@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <title>title</title>
+    <title>Single User</title>
 </head>
 <body>
-      <h1>Users Page</h1>
-    <a class="home-icon" href="/"><i class="fas fa-home"></i></a>
-     
-   <% users.forEach(user => { %>
-    <a href="users/<%= user.id %>">
-     <h2><%= user.name %></h2></a>
+    <header class="flex"><a class="anchor" href="/">UserData</a> <a href="/users" class="anchor">Back</a> </header>
 
-    <%}) %>
+       <h3>Single User Details page</h3>
+       <h4><%= user.name %></h4>
+       <p> <%= user.email %></p>
+       <p> <%= user.age %></p>
 </body>
 </html>
