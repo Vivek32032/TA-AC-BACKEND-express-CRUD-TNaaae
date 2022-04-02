@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>title</title>
+</head>
+<body>
+    
+    <main>
+        <header class="flex"><a class="anchor" href="/">UserData</a> <a href="/users" class="anchor">Back</a> </header>
+
+        <form  class="flex column" action="/users" method="POST">
+            <legend>Add User</legend>
+            <input type="text" name="name" placeholder="My Name">
+            <input type="email" name="email" placeholder="Email me at">
+            <input type="number" name="age" placeholder="My age">
+            <input type="text" name="bio" placeholder="Bio">
+            <input class="btn" type="submit" value="Add User">
+
+        </form>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
